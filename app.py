@@ -39,7 +39,7 @@ User_ID = set()
 def sendMessage():
     text = menu_get()
     messages = TextSendMessage(text=text)
-    line_bot_api.push_message(user_id, messages=messages)
+    line_bot_api.push_message(User_ID, messages=messages)
 
 
 
