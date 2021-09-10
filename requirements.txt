@@ -2,3 +2,5 @@ Flask
 line-bot-sdk
 python-dotenv
 gunicorn
+tweepy
+schedule
