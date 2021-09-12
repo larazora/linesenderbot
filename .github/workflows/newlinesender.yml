@@ -34,7 +34,6 @@ jobs:
           pip install line-bot-sdk
           
           pip install tweepy
-          
         run:
           python newlinesender.py
 
