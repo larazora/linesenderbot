@@ -5,10 +5,10 @@ name: kosenmesi
 # Controls when the workflow will run
 on:
   schedule:
-    - cron: '26 2 * * *'
-    - cron: '13 21 * * *'
-    - cron: '43 7 * * *'
-    - cron: '33 16 * * *'
+    - cron: '26 23 * * *'
+    - cron: '13 4 * * *'
+    - cron: '43 9 * * *'
+    - cron: '37 18 * * *'
     
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
