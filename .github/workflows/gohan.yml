@@ -6,7 +6,9 @@ on:
     - cron: '26 21 * * *'
     - cron: '13 2 * * *'
     - cron: '43 7 * * *'
-    - cron: '22 17 * * *'
+    - cron: '31 17 * * *'
+    
+  workflow_dispatch:
     
 
 
