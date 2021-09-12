@@ -33,7 +33,7 @@ jobs:
           pip install line-bot-sdk
           
           pip install tweepy
-      - name: Run script
+          
       run:
         python newlinesender.py
 
