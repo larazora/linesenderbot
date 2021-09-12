@@ -5,10 +5,10 @@ name: kosenmesi
 # Controls when the workflow will run
 on:
   schedule:
-    - cron: '13 23 * * *'
-    - cron: '26 4 * * *'
-    - cron: '43 9 * * *'
-    - cron: '5 0 * * *'
+    - cron: '13 21 * * *'
+    - cron: '26 2 * * *'
+    - cron: '43 7 * * *'
+    - cron: '5 15 * * *'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
