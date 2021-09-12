@@ -29,7 +29,7 @@ def menu_get():
     print("get text!")
     USER_ID = "U0516ffa38dfa24d3aab65cdb3fd4db77"
     messages = TextSendMessage(text = message)
-    line_bot_api.push_message(USER_ID,messages = messages)
+    line_bot_api.broadcast(messages = messages)
     print("ok")
 
 if __name__ == "__main__":

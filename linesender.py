@@ -1,8 +1,8 @@
 from linebot import LineBotApi
 from linebot.models import TextSendMessage
+import tweepy
 import schedule
 import time
-import tweepy
 
 line_bot_api = LineBotApi('UUgWxP3ys64NJAjbIyDnR09MlFMn7juyXYOzHKWwzgd8KP/WE/2MIfMJ7/fteRfv0Mg2d6LzYLMMndqJneKg510vnrb786l3l/X/lpRxP64FIRUab/gY0i2ySELfszyhbsDtMBdVCY+68lXt1Xf8OQdB04t89/1O/w1cDnyilFU=')
 
@@ -31,14 +31,14 @@ def menu_get():
     print("get text!")
     USER_ID = "U0516ffa38dfa24d3aab65cdb3fd4db77"
     messages = TextSendMessage(text = message)
-    line_bot_api.push_message(USER_ID,messages = messages)
+    line_bot_api.push_message(messages = messages)
     print("ok")
 def main():
     schedule.every(1).day.at("06:13").do(menu_get)
     schedule.every(1).day.at("11:26").do(menu_get)
     schedule.every(1).day.at("16:43").do(menu_get)
-    schedule.every(1).day.at("21:50").do(menu_get)
-    schedule.every(1).day.at("21:45").do(menu_get)
+    schedule.every(1).day.at("00:45").do(menu_get)
+    schedule.every(1).day.at("00:47").do(menu_get)
     print("start!")
 
     while True:
