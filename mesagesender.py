@@ -33,7 +33,7 @@ def main():
     schedule.every(1).day.at("06:13").do(menu_get)
     schedule.every(1).day.at("11:26").do(menu_get)
     schedule.every(1).day.at("16:43").do(menu_get)
-    schedule.every(1).minutes.do(meru_get)
+    schedule.every(1).minutes.do(menu_get)
 
 
 if __name__ == "__main__":
