@@ -16,27 +16,14 @@ line_bot_api = LineBotApi(channel_access_token)
 
 
 
-def menu_get():
-    tweets = api.user_timeline(Account,count=1)
-    for tweet in tweets:
-        tweet_text = tweet.text
-    #print(tweet_text)
+def sendMessage(message):
 
-    messages = TextSendMessage(text=tweet_text)
+    messages = TextSendMessage(text=message)
     line_bot_api.push_message(user_id, messages=messages)
 
 
-
-
-
-def main():
-
-    schedule.every(1).minutes.do(menu_get)
-
-    while True:
-        schedule.run_pending()
-        time.sleep(1)
-
-
 if __name__ == "__main__":
-    main()
+    print("メッセージを入力してください")
+    message = input()
+    sendMessage(message)
+    print("メッセージを送信しました")
