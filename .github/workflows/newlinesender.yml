@@ -33,12 +33,7 @@ jobs:
           pip install line-bot-sdk
           
           pip install tweepy
-      - name: Runscript
+      - name: Run script
       run:
         python newlinesender.py
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
