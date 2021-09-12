@@ -13,10 +13,7 @@ user_id = os.environ.get('USER_ID')
 
 line_bot_api = LineBotApi(channel_access_token)
 
-def sendMessage(message):
 
-    messages = TextSendMessage(text=message)
-    line_bot_api.push_message(user_id, messages=messages)
 
 
 def menu_get():
@@ -24,15 +21,16 @@ def menu_get():
     for tweet in tweets:
         tweet_text = tweet.text
     #print(tweet_text)
-    sendMessage(tweet_text)
+
+    messages = TextSendMessage(text=tweet_text)
+    line_bot_api.push_message(user_id, messages=messages)
+
 
 
 
 
 def main():
-    schedule.every(1).day.at("06:13").do(menu_get)
-    schedule.every(1).day.at("11:26").do(menu_get)
-    schedule.every(1).day.at("16:43").do(menu_get)
+
     schedule.every(1).minutes.do(menu_get)
 
 
