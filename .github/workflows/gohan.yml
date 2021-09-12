@@ -1,11 +1,12 @@
 name: gohan
 
-on: 
+on:
+  push:
   schedule:
     - cron: '26 21 * * *'
     - cron: '13 2 * * *'
     - cron: '43 7 * * *'
-    - cron: '17 17 * * *'
+    - cron: '22 17 * * *'
     
 
 
