@@ -8,7 +8,7 @@ on:
     - cron: '13 21 * * *'
     - cron: '26 2 * * *'
     - cron: '43 7 * * *'
-    - cron: '5 15 * * *'
+    - cron: '15 15 * * *'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -34,6 +34,7 @@ jobs:
           pip install line-bot-sdk
           
           pip install tweepy
+      - name: Run script
         run:
           python newlinesender.py
 
